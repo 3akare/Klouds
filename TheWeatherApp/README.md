@@ -1,2 +1,2 @@
 "# The-Weather-App" 
-its pretty good and  works very well about to make it reponsive
+its pretty good and  works very well. I made it reponsive
