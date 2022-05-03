@@ -170,3 +170,56 @@ hr{
 .container-1{
     box-shadow: 0 10px 25px 10px rgba(128, 128, 128, 0.105);
 }
+@media (max-width:500px){
+    .container-1, .container-2, .container-3{
+    width: 350px;
+    margin: 10px auto;
+    background: white;
+}
+#time, #detail, h4, .grey {
+    margin-left: -10px;
+    font-size: 14px;
+    display: block;
+}
+hr{
+    width: 70%;
+    margin: 0 auto;
+}
+.column{
+    margin:20px;
+}
+.column h3{
+    font-size:14px;
+}
+.box{
+    height: fit-content;
+}
+.heading{
+    height: 200px;
+}
+.input{
+    margin:auto;
+}
+#city{
+    margin-top: -10px;
+    font-size: 20px;
+}
+#degree{
+    float: left;
+    font-size: 45px;
+    margin-bottom: -30px;
+}
+#details, #feels{
+    font-size: 16px;
+}
+.scroll-bar{
+    margin-top: 10px;
+    padding: -10px;
+}
+.temp img{
+    display: none;
+}
+.icon-m{
+    display: none;
+}
+}
