@@ -1,0 +1,27 @@
+{
+  "name": "klouds",
+  "version": "1.0.0",
+  "description": "Weather Web Application",
+  "main": "./main.js",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2",
+    "vite": "^4.3.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tailwindcss -i ./input.css -o ./src/assets/style.css --watch",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3akare/Klouds.git"
+  },
+  "author": "David Bakare",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/3akare/Klouds/issues"
+  },
+  "homepage": "https://github.com/3akare/Klouds#readme"
+}

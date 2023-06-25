@@ -1,7 +1,12 @@
 # Klouds
-![tools](https://skills.thijs.gg/icons?i=html,tailwindcss,javascript)
+![tools](https://skills.thijs.gg/icons?i=html,tailwindcss,javascript,vite)
 <!-- todo: add html, tailwindcss, and js, and openweatherapi logo -->
 Klouds is a weather web application designed to provide you with accurate and up-to-date weather information.
+
+The purpose of this project include;
+- Proper understanding of Javascript DOM
+- Usage and Configuration of TailwindCSS
+- Usage and Configuration of vite
 
 ## Table of Contents
 
@@ -43,19 +48,23 @@ The folder structure of this web application is as follows:
 
 ```
 .
+├── public
+├── src
+    ├── assets
+        └── style.css
+    ├── components
+        └── Footer.js
+        └── Main.js
+        └── NavBar.js
+    ├── utils
+        └── links.js
+├── .gitignore
 ├── index.html
-├── main.css
 ├── main.js
-└── images/
-    ├── icons/
-    ├── svgs/
-    └── images/
+├── package.json
+├── README.md
+├── LICENSE
 ```
-
-- `index.html`: The main HTML file that serves as the entry point of the web application.
-- `main.css`: The CSS file that defines the styles for the web application.
-- `main.js`: The JavaScript file that contains the logic and interactivity for the web application.
-- `images/`: A folder containing various images, icons, and SVGs used in the web application.
 
 ## Contributing
 
