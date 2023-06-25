@@ -3,7 +3,7 @@
 <!-- todo: add html, tailwindcss, and js, and openweatherapi logo -->
 Klouds is a weather web application designed to provide you with accurate and up-to-date weather information.
 
-The purpose of this project include;
+The purpose of this project includes;
 - Proper understanding of Javascript DOM
 - Usage and Configuration of TailwindCSS
 - Usage and Configuration of vite
