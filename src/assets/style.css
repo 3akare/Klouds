@@ -592,6 +592,10 @@ video {
   margin: 0.25rem;
 }
 
+.m-5 {
+  margin: 1.25rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -744,6 +748,10 @@ video {
 
 .h-\[80px\] {
   height: 80px;
+}
+
+.h-7 {
+  height: 1.75rem;
 }
 
 .w-3\/4 {
@@ -1207,4 +1215,12 @@ video {
 
 .outline {
   outline-style: solid;
+}
+
+.\[c\:\^\FFFD\FFFD\] {
+  c: ^��;
+}
+
+.\[x\:\&\FFFD\FFFD\FFFD\FFFD\FFFD\] {
+  x: &�����;
 }
