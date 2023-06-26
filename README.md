@@ -3,10 +3,18 @@
 <!-- todo: add html, tailwindcss, and js, and openweatherapi logo -->
 Klouds is a weather web application designed to provide you with accurate and up-to-date weather information.
 
+<<<<<<< HEAD
 The purpose of this project includes;
 - Proper understanding of Javascript DOM
 - Usage and Configuration of TailwindCSS
 - Usage and Configuration of vite
+=======
+The purpose of this project is to gain a deep understanding of the JavaScript DOM, TailwindCSS, and Vite.
+
+- JavaScript DOM is the foundation of all web development, and a solid understanding of it is essential for building any kind of interactive website or application.
+- TailwindCSS is a modern CSS framework that makes it easy to create beautiful and responsive web designs without writing a lot of CSS code.
+- Vite is a next-generation build tool that speeds up development and improves performance.
+>>>>>>> cccad72 (Solved some development error)
 
 ## Table of Contents
 
@@ -27,7 +35,10 @@ To use this web application, follow these steps:
 git clone https://github.com/3akare/Klouds.git
 ```
 
-2. Open the `index.html` file in a web browser of your choice.
+2. Start a local development server
+```bash
+npm run dev
+```
 
 ## Usage
 
