@@ -1,8 +1,8 @@
 import { CreateFooter } from "./src/components/Footer";
 import { CreateMain } from "./src/components/Main";
-import { CreateNavBar } from "./src/components/NavBar";
+import { CreateHeader } from "./src/components/Header";
 
-let header = CreateNavBar();
+let header = CreateHeader();
 let footer = CreateFooter();
 let main = CreateMain();
 
