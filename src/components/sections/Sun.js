@@ -1,9 +1,9 @@
 import { getSunSet } from "../../utils/getSunData";
 
-const sundata = await getSunSet();
 // const sundata = { results: { sunrise: "5", sunset: "8" } };
-export const SunSection = () => {
+export const SunSection = async () => {
   const sun = document.createElement("section");
+  const sundata = await getSunSet();
   sun.setAttribute(
     "class",
     "flex flex-row justify-between items-center rounded-sm w-full h-fit child-2 bg-white/20 shadow-sm backdrop:blur-sm border-white/20 border dark:bg-white/10 dark:backdrop:blur-lg dark:border-white/10"

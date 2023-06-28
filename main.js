@@ -5,10 +5,16 @@ import { setDarkMode } from './src/utils/setDark';
 
 setDarkMode();
 
-const header = CreateHeader();
-const footer = CreateFooter();
-const main = CreateMain();
+const setup = async ()=> {
+    const header = await CreateHeader();
+    const footer = CreateFooter();
+    const main = await CreateMain();
 
-document.body.prepend(footer);
-document.body.prepend(main);
-document.body.prepend(header);
+    document.body.prepend(footer);
+    document.body.prepend(main);
+    document.body.prepend(header);
+}
+
+setup();
+
+

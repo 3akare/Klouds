@@ -1,13 +1,12 @@
 import { getSunSet } from "../utils/getSunData";
 
-const sundata = await getSunSet();
-// const sundata = { results: { sunrise: "5", sunset: "8" } };
-let sunrise = sundata.results.sunrise;
-let sunset = sundata.results.sunset;
-
-export const NavBody = () => {
+export const NavBody = async () => {
   const div = document.createElement("div");
   const time = new Date().getHours();
+  const sundata = await getSunSet();
+// const sundata = { results: { sunrise: "5", sunset: "8" } };
+  let sunrise = sundata.results.sunrise;
+  let sunset = sundata.results.sunset;
   const dark = document.querySelector("html").classList.contains("dark");
   div.setAttribute("class", "flex flex-row justify-between p-2 m-2");
   div.innerHTML = `

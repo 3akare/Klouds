@@ -3,10 +3,10 @@ import { Features } from './sections/Features';
 import { Others } from './sections/Others';
 import { SunSection } from './sections/Sun';
 
-export const CreateMain = () => {
+export const CreateMain = async () => {
   const main = document.createElement('main');
   const child1 = DayTime();
-  const child2 = SunSection();
+  const child2 = await SunSection();
   const child3 = Others();
   const child4 = Features();
 

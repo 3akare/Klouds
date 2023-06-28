@@ -1,8 +1,8 @@
 import { getSunSet } from "./getSunData";
 
-const sundata = await getSunSet();
 // const sundata = {results: {sunrise: '5', sunset: '8'}};
-export const setDarkMode = () => {
+export const setDarkMode = async () => {
+  const sundata = await getSunSet();
   let sunrise = sundata.results.sunrise;
   let sunset = sundata.results.sunset;
 
