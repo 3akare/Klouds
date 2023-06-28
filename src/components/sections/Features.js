@@ -1,32 +1,51 @@
 export const Features = () => {
-  const features = document.createElement("section");
+  const features = document.createElement('section');
+  const dark = document.querySelector('html').classList.contains('dark');
   features.setAttribute(
-    "class",
-    "flex flex-row justify-around items-center rounded-sm  w-full h-fit child-3 bg-white/20 shadow-sm backdrop:blur-sm border-white/20 border"
+    'class',
+    'flex flex-row justify-around items-center rounded-sm  w-full h-fit child-4 bg-white/20 shadow-sm backdrop:blur-sm border-white/20 border dark:bg-white/10 dark:backdrop:blur-lg dark:border-white/10'
   );
   features.innerHTML = `
     <div class="w-full">
-      <ul class="p-2 m-2">
+      <ul class="p-2 m-2 divide-y-[1px] dark:divide-white/10">
         <li class="flex flex-row  justify-between p-2 m-2 items-center">
           <div class="flex flex-row items-center">
              <p class="font-medium">Pollen Grain</p>
-            <img src="/wheat-svgrepo-com.svg" alt="location" width="30px" height="30px">
+            <img
+            ${
+              dark
+                ? 'src="/dark/wheat-svgrepo-com.svg"'
+                : 'src="/wheat-svgrepo-com.svg"'
+            }
+             alt="location" width="20px" height="20px">
           </div>
-          <p class="font-light">low(2)</p>
+          <p class="">low(2)</p>
         </li>
         <li class="flex flex-row justify-between p-2 m-2 items-center">
           <div class="flex flex-row items-center">
              <p class="font-medium mr-2">AOI</p>
-            <img src="/wind-svgrepo-com.svg" alt="location" width="20px" height="20px">
+            <img
+            ${
+              dark
+                ? 'src="/dark/wind-svgrepo-com.svg"'
+                : 'src="/wind-svgrepo-com.svg"'
+            }
+            alt="location" width="18ox" height="18px">
           </div>
-          <p class="font-light">low(2)</p>
+          <p class="">low(2)</p>
         </li>
         <li class="flex flex-row justify-between p-2 m-2">
            <div class="flex flex-row items-center">
              <p class="font-medium">Running</p>
-            <img src="/running-run-sport-svgrepo-com.svg" alt="location" width="40px" height="40px">
+            <img
+             ${
+               dark
+                 ? 'src="/dark/running-run-sport-svgrepo-com.svg"'
+                 : 'src="/running-run-sport-svgrepo-com.svg"'
+             }
+            alt="location" width="35px" height="35px">
           </div>
-          <p class="font-light">low(2)</p>
+          <p class="">low(2)</p>
         </li>
       </ul>
     </div>

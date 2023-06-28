@@ -1,26 +1,30 @@
+import { getSunSet } from "../../utils/getSunData";
+
+// const sundata = await getSunSet();
+const sundata = { results: { sunrise: "5", sunset: "8" } };
 export const SunSection = () => {
   const sun = document.createElement("section");
   sun.setAttribute(
     "class",
-    "flex flex-row justify-between items-center rounded-sm w-full h-fit child-4 bg-white/20 shadow-sm backdrop:blur-sm border-white/20 border"
+    "flex flex-row justify-between items-center rounded-sm w-full h-fit child-2 bg-white/20 shadow-sm backdrop:blur-sm border-white/20 border dark:bg-white/10 dark:backdrop:blur-lg dark:border-white/10"
   );
   sun.innerHTML = `
     <div class="flex flex-col items-center justify-center space-y-4 p-2 m-2">
-        <h2>
+        <h2 class="font-semibold">
           Sunrise
         </h2>
-        
+          <lottie-player src="./36236-sun-icon (1).json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;" hover autoplay loop class="-z-10"></lottie-player>
         <time>
-          06:25
+          ${sundata.results.sunrise}
         </time>
     </div>
     <div class="flex flex-col items-center justify-center space-y-4 p-2 m-2">
-        <h2>
+        <h2 class="font-semibold">
           Sunset
         </h2>
-        <lottie-player src="https://lottie.host/f47d6cb6-d815-4968-942b-d69dd7a27a69/IWWN9FDh3s.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;" hover autoplay  class="-z-10"></lottie-player>
+        <lottie-player src="./36236-blue-sun.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;" hover autoplay loop class="-z-10"></lottie-player>
         <time>
-          06:25
+          ${sundata.results.sunset}
         </time>
     </div>
   `;
