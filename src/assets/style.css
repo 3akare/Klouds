@@ -608,8 +608,16 @@ body {
   margin-top: 3rem;
 }
 
-.mt-72 {
-  margin-top: 18rem;
+.mt-\[16\.5rem\] {
+  margin-top: 16.5rem;
+}
+
+.mt-\[15\.5rem\] {
+  margin-top: 15.5rem;
+}
+
+.mt-\[15\.8rem\] {
+  margin-top: 15.8rem;
 }
 
 .flex {
@@ -627,26 +635,6 @@ body {
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
-}
-
-.h-4 {
-  height: 1rem;
-}
-
-.h-24 {
-  height: 6rem;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-8 {
-  height: 2rem;
-}
-
-.h-9 {
-  height: 2.25rem;
 }
 
 .w-1\/2 {
@@ -818,17 +806,9 @@ body {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.focus\:border-none:focus {
-  border-style: none;
-}
-
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-
-.focus\:outline:focus {
-  outline-style: solid;
 }
 
 :is(.dark .dark\:divide-white\/10) > :not([hidden]) ~ :not([hidden]) {
@@ -855,10 +835,4 @@ body {
 :is(.dark .dark\:backdrop\:blur-lg)::backdrop {
   --tw-blur: blur(16px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-@media not all and (min-width: 1024px) {
-  .max-lg\:h-9 {
-    height: 2.25rem;
-  }
 }

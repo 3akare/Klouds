@@ -2,7 +2,7 @@ export const DayTime = () => {
   const day = document.createElement('section');
   day.setAttribute(
     'class',
-    'flex flex-row justify-around items-center rounded-sm h-fit child-1 mt-72 bg-white/20 shadow-sm backdrop:blur-sm border-white/20 border dark:bg-white/10 dark:backdrop:blur-lg dark:border-white/10'
+    'flex flex-row justify-around items-center rounded-sm h-fit child-1 mt-[15.8rem] bg-white/20 shadow-sm backdrop:blur-sm border-white/20 border dark:bg-white/10 dark:backdrop:blur-lg dark:border-white/10'
   );
   day.innerHTML = `
     <div class="flex overflow-x-auto divide-x-[1px] divide-slate-200/20">
