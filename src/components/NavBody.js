@@ -1,7 +1,7 @@
 import { getSunSet } from "../utils/getSunData";
 
-// const sundata = await getSunSet();
-const sundata = { results: { sunrise: "5", sunset: "8" } };
+const sundata = await getSunSet();
+// const sundata = { results: { sunrise: "5", sunset: "8" } };
 let sunrise = sundata.results.sunrise;
 let sunset = sundata.results.sunset;
 

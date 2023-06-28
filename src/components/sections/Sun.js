@@ -1,7 +1,7 @@
 import { getSunSet } from "../../utils/getSunData";
 
-// const sundata = await getSunSet();
-const sundata = { results: { sunrise: "5", sunset: "8" } };
+const sundata = await getSunSet();
+// const sundata = { results: { sunrise: "5", sunset: "8" } };
 export const SunSection = () => {
   const sun = document.createElement("section");
   sun.setAttribute(
