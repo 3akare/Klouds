@@ -11,7 +11,7 @@ export const CreateHeader = () => {
   const section = document.createElement("section");
   section.setAttribute(
     "class",
-    "container mx-auto max-w-3xl p-2 bg-white/60 backdrop:blur-sm border-white/20 border"
+    "container mx-auto max-w-3xl p-2 bg-white/60 backdrop-blur-lg border-white/20 border"
   );
   header.prepend(section);
 

@@ -9,7 +9,7 @@ export const SunSection = () => {
         <h2>
           Sunrise
         </h2>
-        <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_xcvaucib.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;" hover loop autoplay class="z-10"></lottie-player>
+        
         <time>
           06:25
         </time>
@@ -18,7 +18,7 @@ export const SunSection = () => {
         <h2>
           Sunset
         </h2>
-        <lottie-player src="https://lottie.host/f47d6cb6-d815-4968-942b-d69dd7a27a69/IWWN9FDh3s.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;" hover loop autoplay></lottie-player>
+        <lottie-player src="https://lottie.host/f47d6cb6-d815-4968-942b-d69dd7a27a69/IWWN9FDh3s.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;" hover autoplay  class="-z-10"></lottie-player>
         <time>
           06:25
         </time>
