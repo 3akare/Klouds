@@ -608,14 +608,6 @@ body {
   margin-top: 3rem;
 }
 
-.mt-\[16\.5rem\] {
-  margin-top: 16.5rem;
-}
-
-.mt-\[15\.5rem\] {
-  margin-top: 15.5rem;
-}
-
 .mt-\[15\.8rem\] {
   margin-top: 15.8rem;
 }
@@ -703,6 +695,12 @@ body {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
 .divide-x-\[1px\] > :not([hidden]) ~ :not([hidden]) {
@@ -801,9 +799,58 @@ body {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 0 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-button img {
+  height: 100%;
+}
+
+.selection\:outline-none *::-moz-selection {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.selection\:outline-none *::selection {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.selection\:outline-none::-moz-selection {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.selection\:outline-none::selection {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .backdrop\:blur-sm::backdrop {
   --tw-blur: blur(4px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.hover\:outline-none:hover {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.hover\:outline:hover {
+  outline-style: solid;
 }
 
 .focus\:outline-none:focus {

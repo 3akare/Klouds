@@ -12,6 +12,4 @@ export const setDarkMode = async () => {
   time < parseInt(sunrise.split(":")[0], 10)
     ? document.querySelector("html").classList.add("dark")
     : document.querySelector("html").classList.remove("dark");
-
-  console.log(sunrise);
 };
