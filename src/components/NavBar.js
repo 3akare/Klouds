@@ -1,11 +1,11 @@
 import { getWeather } from "../utils/getWeather";
 
 export const NavBar = async () => {
-  const nav = document.createElement('nav');
+  const nav = document.createElement("nav");
   const dark = document.querySelector("html").classList.contains("dark");
   nav.setAttribute(
-    'class',
-    'flex flex-row justify-between items-center p-2 m-2'
+    "class",
+    "flex flex-row justify-between items-center p-2 m-2"
   );
   nav.innerHTML = `
         <h1 class="p-2">

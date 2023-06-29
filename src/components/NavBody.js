@@ -12,9 +12,9 @@ export const NavBody = async () => {
   div.innerHTML = `
         <div class="flex flex-col p-1 m-1 space-y-4 justify-center">
             <h1 class="text-7xl">
-                ${
-                  Math.ceil(weatherData.current.feelslike_c)
-                }<span class="text-5xl">ºc</span>
+                ${Math.ceil(
+                  weatherData.current.feelslike_c
+                )}<span class="text-5xl">ºc</span>
             </h1>
             <div class="flex flex-row m-1 space-x-1">
                 <p class="text-lg">

@@ -25,7 +25,7 @@ const domSetup = async () => {
       window.location.reload();
     } else {
       alert("Invalid Location");
-      searchInput.value = ""
+      searchInput.value = "";
     }
   });
 

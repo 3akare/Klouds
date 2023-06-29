@@ -1,11 +1,11 @@
 import { weatherData } from "../../utils/getWeather";
 
 export const Others = () => {
-  const others = document.createElement('section');
-  const dark = document.querySelector('html').classList.contains('dark');
+  const others = document.createElement("section");
+  const dark = document.querySelector("html").classList.contains("dark");
   others.setAttribute(
-    'class',
-    'flex flex-row justify-around items-center rounded-sm w-full h-fit child-3 bg-white/20 shadow-sm backdrop:blur-sm border-white/20 border dark:bg-white/10 dark:backdrop:blur-lg dark:border-white/10'
+    "class",
+    "flex flex-row justify-around items-center rounded-sm w-full h-fit child-3 bg-white/20 shadow-sm backdrop:blur-sm border-white/20 border dark:bg-white/10 dark:backdrop:blur-lg dark:border-white/10"
   );
 
   others.innerHTML = `
