@@ -2,7 +2,7 @@ import { NavBar } from './NavBar';
 import { NavBody } from './NavBody';
 
 export const CreateHeader = async () => {
-  const nav = NavBar();
+  const nav = await NavBar();
   const div = await NavBody();
 
   const header = document.createElement('header');

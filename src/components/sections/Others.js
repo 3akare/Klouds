@@ -1,3 +1,5 @@
+import { weatherData } from "../../utils/getWeather";
+
 export const Others = () => {
   const others = document.createElement('section');
   const dark = document.querySelector('html').classList.contains('dark');
@@ -16,7 +18,7 @@ export const Others = () => {
             }
             alt="" width="40px" height="40px" class="w-12 h-12">
             <p class="p-1 m-1 font-semibold">Humidity</p>
-            <p class="p-1 m-1">low</p>
+            <p class="p-1 m-1">${weatherData.current.humidity}</p>
         </div>
         <div class="p-2 m-2 text-center flex items-center flex-col">
             <img
@@ -27,7 +29,7 @@ export const Others = () => {
              }
             alt="" width="40px" height="40px" class="w-12 h-12">
             <p class="p-1 m-1 font-semibold">UV index</p>
-            <p class="p-1 m-1">low</p>
+            <p class="p-1 m-1">${weatherData.current.uv}</p>
         </div>
         <div class="p-2 m-2 text-center flex items-center flex-col">
             <img
@@ -38,7 +40,7 @@ export const Others = () => {
             }
             alt="" width="40px" height="40px" class="w-12 h-12">
             <p class="p-1 m-1 font-semibold">Wind</p>
-            <p class="p-1 m-1">low</p>
+            <p class="p-1 m-1">${weatherData.current.wind_kph}</p>
         </div>
     `;
   return others;

@@ -8,8 +8,8 @@ export const setDarkMode = async () => {
 
   const time = new Date().getHours();
 
-  time >= parseInt(sunset.split(":")[0], 10) ||
-  time < parseInt(sunrise.split(":")[0], 10)
+  time >= parseInt(sunrise.split(":")[0], 10) ||
+  time < parseInt(sunset.split(":")[0], 10)
     ? document.querySelector("html").classList.add("dark")
     : document.querySelector("html").classList.remove("dark");
 };

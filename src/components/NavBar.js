@@ -1,4 +1,6 @@
-export const NavBar = () => {
+import { getWeather } from "../utils/getWeather";
+
+export const NavBar = async () => {
   const nav = document.createElement('nav');
   const dark = document.querySelector("html").classList.contains("dark");
   nav.setAttribute(
@@ -11,12 +13,7 @@ export const NavBar = () => {
         </h1>
         <div class="search-container">
           <input type="text" name="search" id="search" placeholder="Search city..." class="border p-1 px-4 rounded-md w-full dark:bg-indigo-950 dark:border-white/20 focus:outline-none hover:outline-none selection:outline-none">
-          <button type="submit" class="search-button" id="searchButton"
-          onclick="
-            const input = document.querySelector('#search');
-            console.log(input.value)
-            input.value = ''
-          ">
+          <button type="submit" class="search-button" id="searchButton">
             <img
             ${
               dark
