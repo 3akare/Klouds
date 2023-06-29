@@ -25,6 +25,7 @@ const domSetup = async () => {
       window.location.reload();
     } else {
       alert("Invalid Location");
+      searchInput.value = ""
     }
   });
 
@@ -37,6 +38,7 @@ const domSetup = async () => {
         window.location.reload();
       } else {
         alert("Invalid Location");
+        searchInput.value = "";
       }
     }
   });
