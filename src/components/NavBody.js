@@ -30,8 +30,8 @@ export const NavBody = async () => {
         </div>
         <div class="flex p-1 m-1 flex-col justify-end items-start">
         ${
-          time >= parseInt(sunrise.split(":")[0], 10) ||
-          time < parseInt(sunset.split(":")[0], 10)
+          time >= parseInt(sunset.split(":")[0], 10) + 12 ||
+          time < parseInt(sunrise.split(":")[0], 10)
             ? ` <lottie-player src="./10686-the-moon.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop autoplay></lottie-player>
             `
             : `<lottie-player src="./36236-sun-icon (1).json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop autoplay></lottie-player>`
